@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Header.css";
 import eth from "../../assets/eth.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -9,8 +10,8 @@ const Header = () => {
             <i class="logoIcon fas fa-chess-knight"></i>
             </div>
             <div className="menus">
-                <li>Swap</li>
-                <li>Pool</li>
+                <li><Link style={{textDecoration: 'none', color:'black'}} to="/">Swap</Link></li>
+                <li><Link style={{textDecoration: 'none', color:'black'}} to="/pool">Pool</Link></li>
                 <li>Vote</li>
                 <li className="flex flex-row items-center">Charts<i className="fas fa-external-link-alt ml-1" style={{fontSize: '12px'}}></i></li>
             </div>
