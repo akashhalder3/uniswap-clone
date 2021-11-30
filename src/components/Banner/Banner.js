@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
-import SettingModal from "../SettingModal/SettingModal"
+// import SettingModal from "./SettingModal"
 import { Modal, Button } from "react-bootstrap";
+import Switch from "../Switch/Switch";
+import icon1 from "../../assets/icon1.png";
+import icon2 from "../../assets/icon2.svg";
+import icon3 from "../../assets/icon3.svg";
+import icon4 from "../../assets/icon4.png";
+import icon5 from "../../assets/icon5.png";
 
 const HeaderSm = () => {
     const [showSettings, setShowSettings] = useState(false);
@@ -22,7 +28,33 @@ const HeaderSm = () => {
                                 <Modal.Title>Transaction Settings</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                <p>Slippage tolerance?</p>
+                                <p></p>
+                                {/********* */}
+                                
+                                <div>
+                <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
+                <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
+                <div className="flex justify-between items-center">
+                    <h4 className="slippage-button  ">Auto</h4>
+                    <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
+                </div>
+                <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
+                <div className="flex justify-between items-center">
+                    <input type="text" id="fname-one" name="fname" placeholder="30"/>
+                    <h4 className="text-xl">minutes</h4>
+                </div>
+                <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
+                <div className="flex justify-between items-center py-3">
+                    <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
+                    <Switch />
+                </div>
+                <div className="flex justify-between items-center">
+                    <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
+                    <Switch />
+                </div>
+            </div> 
+        
+                                {/********* */}
                             </Modal.Body>
                         </Modal>
                     </>
@@ -48,32 +80,32 @@ const HeaderSm = () => {
 
                             <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
                                 <h6 className="mt-2">How this app use APIs</h6>
-                                <p className="mt-2">icons</p>
+                                <i class="fas fa-arrow-right  bg-pink-700"></i>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Metamask</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon1} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">WalletConnect</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon2} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Coinbase Wallet</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon3} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Fortmatic</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon4} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Portis</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon5} /></p>
                             </div>
                         </Modal.Body>
                     </Modal>
@@ -103,7 +135,29 @@ const HeaderMd = () => {
                                 <Modal.Title>Transaction Settings</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                <p>Slippage tolerance?</p>
+                                {/* <p>Slippage tolerance?</p> */}
+                                <div>
+                <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
+                <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
+                <div className="flex justify-between items-center">
+                    <h4 className="slippage-button  ">Auto</h4>
+                    <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
+                </div>
+                <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
+                <div className="flex justify-between items-center">
+                    <input type="text" id="fname-one" name="fname" placeholder="30"/>
+                    <h4 className="text-xl">minutes</h4>
+                </div>
+                <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
+                <div className="flex justify-between items-center py-3">
+                    <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
+                    <Switch />
+                </div>
+                <div className="flex justify-between items-center">
+                    <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
+                    <Switch />
+                </div>
+            </div>  
                             </Modal.Body>
                         </Modal>
                     </>
@@ -129,32 +183,32 @@ const HeaderMd = () => {
 
                             <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
                                 <h6 className="mt-2">How this app use APIs</h6>
-                                <p className="mt-2">icons</p>
+                                <i class="fas fa-arrow-right  bg-pink-700"></i>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Metamask</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon1} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">WalletConnect</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon2} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Coinbase Wallet</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon3} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Fortmatic</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon4} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Portis</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon5} /></p>
                             </div>
                         </Modal.Body>
                     </Modal>
@@ -187,7 +241,29 @@ const HeaderLg = () => {
                                 <Modal.Title>Transaction Settings</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                <p>Slippage tolerance?</p>
+                                {/* <p>Slippage tolerance?aaaaa</p> */}
+                                <div>
+                <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
+                <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
+                <div className="flex justify-between items-center">
+                    <h4 className="slippage-button  ">Auto</h4>
+                    <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
+                </div>
+                <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
+                <div className="flex justify-between items-center">
+                    <input type="text" id="fname-one" name="fname" placeholder="30"/>
+                    <h4 className="text-xl">minutes</h4>
+                </div>
+                <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
+                <div className="flex justify-between items-center py-3">
+                    <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
+                    <Switch />
+                </div>
+                <div className="flex justify-between items-center">
+                    <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
+                    <Switch />
+                </div>
+            </div> 
                             </Modal.Body>
                         </Modal>
                     </>
@@ -212,33 +288,34 @@ const HeaderLg = () => {
                             <p style={{ borderRadius: '16px', padding: '20px', backgroundColor: '#F7F8FA' }}>By connecting a wallet, you agree to Uniswap Labs’ Terms of Service and acknowledge that you have read and understand the Uniswap Protocol Disclaimer.</p>
 
                             <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
-                                <h6 className="mt-2">How this app use APIs</h6>
-                                <p className="mt-2">icons</p>
+                                <h6 className="mt-2 ">How this app use APIs</h6>
+                                <i class="fas fa-arrow-right  bg-pink-700"></i>
+                                
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Metamask</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon1} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">WalletConnect</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon2} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Coinbase Wallet</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon3} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Fortmatic</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon4} /></p>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
                                 <h6 className="mt-2">Portis</h6>
-                                <p className="mt-2">icon</p>
+                                <p className="mt-2"><img className="w-8" src={icon5} /></p>
                             </div>
                         </Modal.Body>
                     </Modal>
