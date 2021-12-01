@@ -1,0 +1,72 @@
+.scrolll-bg {
+    background-color: tomato;
+    width: 100%;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.scroll-div {
+    width: 100%;
+    /* background-color: yellow; */
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.scroll-div-sm {
+    width: 100%;
+    /* background-color: yellow; */
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.scroll-object {
+    /* color: red; */
+    /* font-family: cursive; */
+    font-size: 15px;
+    padding: 20px;
+}
+/**************/
+#token-model-input {
+    background-color: whitesmoke;
+    color: deeppink;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 14px;
+    border-radius: 12px;
+    border-color: rgb(221, 215, 215);
+    border: 1px solid deeppink;
+    width: 100%;
+}
+#token-model-input-large {
+    background-color: whitesmoke;
+    color: deeppink;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 14px;
+    border-radius: 12px;
+    border: 1px solid rgb(247, 7, 79);
+    margin-top: 8px;
+    width: 100%;
+}
+.logo-images-container-large {
+    display: flex;
+    width: 142px;
+    border: 1px solid #b9b7b8;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin-right: 14px;
+    margin-top: 8px;
+    
+}
+.logo-images-container-large-extra {
+    width: 164px;
+    margin-bottom: 34px;
+}
+.common-box-images {
+    display: flex;
+}
+.common-boxes-container {
+    border-bottom: 1px solid rgb(202, 200, 200);
+}
