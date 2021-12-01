@@ -18,17 +18,19 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    padding: 5px;
+    padding: 10px;
 }
 .menus li{
     list-style-type: none;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 10px;
-    /* margin-right: 20px; */
+    font-weight: 700;
+    opacity: 0.6;
 }
 .menus li:hover{
     background-color: rgb(237, 238, 242);
     border-radius: 16px;
+    opacity: 1;
 }
 
 .options{
@@ -73,7 +75,7 @@
         font-size: 20px;
     }
     .options p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .optionOne, .optionTwo{
         margin-right: 10px;
@@ -82,7 +84,7 @@
         top: 90vh;
     }
     .menus li{
-        font-size: 10px;
+        font-size: 12px;
     }
     /* .eth{
         padding-left: 5px;

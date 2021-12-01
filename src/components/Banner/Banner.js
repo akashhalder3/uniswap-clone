@@ -60,7 +60,7 @@ const HeaderSm = () => {
                     </>
                 </div>
                 <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-1 border-1 border-gray-400 rounded-lg">
-                    <h3 className="mb-2 flex items-center bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-2 rounded-full"></i>&nbsp;&nbsp;<strong className="font-bold text-2xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    <h3 className="mb-2 flex items-center bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-1 rounded-full"></i>&nbsp;&nbsp;<strong className="font-bold text-2xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
@@ -269,7 +269,7 @@ const HeaderLg = () => {
                     </>
                 </div>
                 <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-1 border-1 border-gray-400 rounded-lg">
-                    <h3 className="flex items-center mb-2 bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-2 rounded-full"></i>&nbsp;&nbsp;<strong className="font-semibold text-xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    <h3 className="flex items-center mb-2 bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-1 rounded-full"></i>&nbsp;&nbsp;<strong className="font-semibold text-xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
                     <h3 className="text-3xl mb-2 items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
