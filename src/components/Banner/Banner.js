@@ -16,6 +16,11 @@ const HeaderSm = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const [showToken, setShowToken] = useState(false);
+    const handleClosed = () => setShowToken(false);
+    const handleShowToken = () => setShowToken(true);
+
     return (
         <>
             <div className="bg-white w-11/12 mx-auto p-3 rounded-2xl ">
@@ -30,44 +35,52 @@ const HeaderSm = () => {
                             <Modal.Body>
                                 <p></p>
                                 {/********* */}
-                                
+
                                 <div>
-                <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
-                <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
-                <div className="flex justify-between items-center">
-                    <h4 className="slippage-button  ">Auto</h4>
-                    <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
-                </div>
-                <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
-                <div className="flex justify-between items-center">
-                    <input type="text" id="fname-one" name="fname" placeholder="30"/>
-                    <h4 className="text-xl">minutes</h4>
-                </div>
-                <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
-                <div className="flex justify-between items-center py-3">
-                    <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
-                    <Switch />
-                </div>
-                <div className="flex justify-between items-center">
-                    <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
-                    <Switch />
-                </div>
-            </div> 
-        
+                                    <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
+                                    <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
+                                    <div className="flex justify-between items-center">
+                                        <h4 className="slippage-button  ">Auto</h4>
+                                        <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
+                                    </div>
+                                    <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
+                                    <div className="flex justify-between items-center">
+                                        <input type="text" id="fname-one" name="fname" placeholder="30" />
+                                        <h4 className="text-xl">minutes</h4>
+                                    </div>
+                                    <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
+                                    <div className="flex justify-between items-center py-3">
+                                        <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
+                                        <Switch />
+                                    </div>
+                                    <div className="flex justify-between items-center">
+                                        <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
+                                        <Switch />
+                                    </div>
+                                </div>
+
                                 {/********* */}
                             </Modal.Body>
                         </Modal>
                     </>
                 </div>
-                <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-1 border-1 border-gray-400 rounded-lg">
+                <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-1 border-1 border-gray-400 rounded-lg" >
                     <h3 className="mb-2 flex items-center bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-1 rounded-full"></i>&nbsp;&nbsp;<strong className="font-bold text-2xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
-                <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-1 border-gray-400 rounded-lg">
+                <div onClick={handleShowToken} className="cursor-pointer header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-1 border-gray-400 rounded-lg">
                     <h3 className="mb-2 flex items-center bg-pink-600 py-2 px-3  ml-3 rounded-xl"><span className=" text-2xl bg-pink-600 text-white">Select a token</span>&nbsp;&nbsp;<i class="fas fa-chevron-down pt-2 pr-1 bg-pink-600 text-white"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
+                <>
+                    <Modal show={showToken} onHide={handleClosed}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    </Modal>
+                </>
 
                 <h3 className="header__button bg-pink-200 text-pink-700 flex justify-center py-4 rounded-3xl text-2xl font-semibold" onClick={handleShow}>Connect Wallet</h3>
                 <>
@@ -123,6 +136,10 @@ const HeaderMd = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const [showToken, setShowToken] = useState(false);
+    const handleClosed = () => setShowToken(false);
+    const handleShowToken = () => setShowToken(true);
     return (
         <>
             <div className="bg-white w-5/12 mx-auto p-3 rounded-2xl ">
@@ -137,27 +154,27 @@ const HeaderMd = () => {
                             <Modal.Body>
                                 {/* <p>Slippage tolerance?</p> */}
                                 <div>
-                <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
-                <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
-                <div className="flex justify-between items-center">
-                    <h4 className="slippage-button  ">Auto</h4>
-                    <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
-                </div>
-                <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
-                <div className="flex justify-between items-center">
-                    <input type="text" id="fname-one" name="fname" placeholder="30"/>
-                    <h4 className="text-xl">minutes</h4>
-                </div>
-                <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
-                <div className="flex justify-between items-center py-3">
-                    <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
-                    <Switch />
-                </div>
-                <div className="flex justify-between items-center">
-                    <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
-                    <Switch />
-                </div>
-            </div>  
+                                    <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
+                                    <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
+                                    <div className="flex justify-between items-center">
+                                        <h4 className="slippage-button  ">Auto</h4>
+                                        <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
+                                    </div>
+                                    <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
+                                    <div className="flex justify-between items-center">
+                                        <input type="text" id="fname-one" name="fname" placeholder="30" />
+                                        <h4 className="text-xl">minutes</h4>
+                                    </div>
+                                    <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
+                                    <div className="flex justify-between items-center py-3">
+                                        <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
+                                        <Switch />
+                                    </div>
+                                    <div className="flex justify-between items-center">
+                                        <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
+                                        <Switch />
+                                    </div>
+                                </div>
                             </Modal.Body>
                         </Modal>
                     </>
@@ -167,10 +184,18 @@ const HeaderMd = () => {
                     <h3 className="text-3xl mb-2 items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
-                <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-1 border-gray-400 rounded-lg">
+                <div onClick={handleShowToken} className="cursor-pointer header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-1 border-gray-400 rounded-lg">
                     <h3 className="mb-2 flex items-center bg-pink-600 py-2 px-3  ml-3 rounded-xl"><span className=" text-lg bg-pink-600 text-white">Select a token</span>&nbsp;&nbsp;<i class="fas fa-chevron-down pt-2 pr-1 bg-pink-600 text-white"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
+                <>
+                    <Modal show={showToken} onHide={handleClosed}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    </Modal>
+                </>
 
                 <h3 className="header__button bg-pink-200 text-pink-700 flex justify-center py-4 rounded-3xl text-xl font-semibold" onClick={handleShow}>Connect Wallet</h3>
                 <>
@@ -226,6 +251,10 @@ const HeaderLg = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const [showToken, setShowToken] = useState(false);
+    const handleClosed = () => setShowToken(false);
+    const handleShowToken = () => setShowToken(true);
     return (
         <>
             <div className="bg-white w-5/12 mx-auto p-3 rounded-2xl">
@@ -243,27 +272,27 @@ const HeaderLg = () => {
                             <Modal.Body>
                                 {/* <p>Slippage tolerance?aaaaa</p> */}
                                 <div>
-                <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
-                <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
-                <div className="flex justify-between items-center">
-                    <h4 className="slippage-button  ">Auto</h4>
-                    <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
-                </div>
-                <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
-                <div className="flex justify-between items-center">
-                    <input type="text" id="fname-one" name="fname" placeholder="30"/>
-                    <h4 className="text-xl">minutes</h4>
-                </div>
-                <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
-                <div className="flex justify-between items-center py-3">
-                    <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
-                    <Switch />
-                </div>
-                <div className="flex justify-between items-center">
-                    <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
-                    <Switch />
-                </div>
-            </div> 
+                                    <h2 className="text-gray-600 font-bold text-xl">Transcetion Settings</h2>
+                                    <h2 className="text-gray-600 text-lg pb-2">Slippage Tolerance ?</h2>
+                                    <div className="flex justify-between items-center">
+                                        <h4 className="slippage-button  ">Auto</h4>
+                                        <input type="text" id="fname-one" name="fname" placeholder="0.10%" />
+                                    </div>
+                                    <h2 className="text-gray-600 text-lg pt-3 pb-1">Transection Deadline</h2>
+                                    <div className="flex justify-between items-center">
+                                        <input type="text" id="fname-one" name="fname" placeholder="30" />
+                                        <h4 className="text-xl">minutes</h4>
+                                    </div>
+                                    <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
+                                    <div className="flex justify-between items-center py-3">
+                                        <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
+                                        <Switch />
+                                    </div>
+                                    <div className="flex justify-between items-center">
+                                        <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
+                                        <Switch />
+                                    </div>
+                                </div>
                             </Modal.Body>
                         </Modal>
                     </>
@@ -273,10 +302,18 @@ const HeaderLg = () => {
                     <h3 className="text-3xl mb-2 items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
-                <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-1 border-gray-400 rounded-lg">
+                <div onClick={handleShowToken} className="cursor-pointer header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-1 border-gray-400 rounded-lg">
                     <h3 className="mb-2 flex items-center bg-pink-600 py-2 px-3  ml-3 rounded-xl"><span className=" text-xl bg-pink-600 text-white">Select a token</span>&nbsp;&nbsp;<i class="fas fa-chevron-down pt-2 pr-1 bg-pink-600 text-white"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
+                <>
+                    <Modal show={showToken} onHide={handleClosed}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    </Modal>
+                </>
 
                 <h3 className="header__button bg-pink-200 text-pink-700 flex justify-center py-4 rounded-3xl text-xl font-semibold cursor-pointer" onClick={handleShow}>Connect Wallet</h3>
                 <>
@@ -290,7 +327,7 @@ const HeaderLg = () => {
                             <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
                                 <h6 className="mt-2 ">How this app use APIs</h6>
                                 <i class="fas fa-arrow-right  bg-pink-700"></i>
-                                
+
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
