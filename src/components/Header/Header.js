@@ -22,8 +22,6 @@ const Header = () => {
             <div className="menus">
                 <li><Link style={{textDecoration: 'none', color:'black'}} to="/">Swap</Link></li>
                 <li><Link style={{textDecoration: 'none', color:'black'}} to="/pool">Pool</Link></li>
-                <li>Vote</li>
-                <li className="flex flex-row items-center">Charts<i className="fas fa-external-link-alt ml-1" style={{fontSize: '12px'}}></i></li>
             </div>
             <div className="options">
                 <div className="optionOne px-3">
