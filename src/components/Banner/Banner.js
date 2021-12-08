@@ -41,7 +41,7 @@ const HeaderSm = () => {
 
     return (
         <>
-            <div className="bg-white w-11/12 mx-auto p-3 rounded-2xl ">
+            <div className="bg-white w-11/12 mx-auto p-3 rounded-3xl ">
                 <div className="header__head flex items-center justify-between bg-white my-2 mb-3">
                     <h4 className="font-semibold text-2xl bg-white">Swap</h4>
                     <i className="fas fa-cog text-2xl bg-white cursor-pointer" onClick={handleShowSettings}></i>
@@ -345,7 +345,7 @@ const HeaderMd = () => {
     const handleShowToken = () => setShowToken(true);
     return (
         <>
-            <div className="bg-white w-5/12 mx-auto p-3 rounded-2xl ">
+            <div className="bg-white w-5/12 mx-auto p-3 rounded-3xl ">
                 <div className="header__head flex items-center justify-between bg-white my-1 mb-3">
                     <h4 className="font-semibold text-2xl bg-white">Swap</h4>
                     <i className="fas fa-cog text-2xl bg-white cursor-pointer" onClick={handleShowSettings}></i>
@@ -709,7 +709,7 @@ const HeaderLg = () => {
     const handleShowToken = () => setShowToken(true);
     return (
         <>
-            <div className="bg-white w-5/12 mx-auto p-3 rounded-2xl">
+            <div className="bg-white w-5/12 mx-auto p-3 rounded-3xl">
                 <div className="header__head flex items-center justify-between bg-white my-1 mb-3">
                     <h4 className="font-semibold text-2xl bg-white">Swap</h4>
                     <i className="settings cursor-pointer fas fa-cog text-2xl bg-white" onClick={handleShowSettings}></i>
