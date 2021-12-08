@@ -24,6 +24,7 @@ import scrollimg6 from "../../assets/scrollimg6.svg";
 import scrollimg7 from "../../assets/scrollimg7.png";
 import scrollimg8 from "../../assets/scrollimg8.svg";
 import scrollimg9 from "../../assets/scrollimg9.svg";
+import bnb from "../../assets/bnb.png";
 import './Banner.css';
 
 const HeaderSm = () => {
@@ -83,7 +84,7 @@ const HeaderSm = () => {
                     </>
                 </div>
                 <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-1 border-1 border-gray-400 rounded-lg" >
-                    <h3 onClick={handleShowToken} className="cursor-pointer mb-2 flex items-center bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-1 rounded-full"></i>&nbsp;&nbsp;<strong className="font-bold text-2xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    <h3 onClick={handleShowToken} className="cursor-pointer mb-2 flex items-center bg-white py-2 px-3 rounded-2xl ml-3"><img src={bnb} style={{width:'5vw'}} alt="" />&nbsp;&nbsp;<strong className="font-bold text-2xl">BNB</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
@@ -98,21 +99,17 @@ const HeaderSm = () => {
                         </Modal.Header>
                         <Modal.Body>
 
-                            {/* <div className="flex justify-between items-center px-2 mt-4 mb-2">
-            <h3 className="text-xl ">Select a token</h3>
-            <h1>X</h1>
-        </div> */}
                             <input type="text" id="token-model-input" name="fname" placeholder="Search name or paste address" />
                             <div className="scroll-bg">
                                 <div className="scroll-div-sm">
                                     <div className="scroll-object">
                                         <div className="flex items-center">
                                             <div >
-                                                <img className="Token-images w-8 pb-3" src={scrollimg1} />
+                                                <img className="Token-images w-8 pb-3" src={bnb} />
                                             </div>
                                             <div className="ml-4">
-                                                <h3 className="text-lg  font-semibold mb-0">ETH</h3>
-                                                <p className="text-sm text-gray-500 ">Ether</p>
+                                                <h3 className="text-lg  font-semibold mb-0">BNB</h3>
+                                                <p className="text-sm text-gray-500 ">Binance</p>
                                             </div>
                                         </div>
 
@@ -196,7 +193,7 @@ const HeaderSm = () => {
                                             </div>
                                         </div>
 
-                                        <div className="flex items-center">
+                                        {/* <div className="flex items-center">
                                             <div >
                                                 <img className="Token-images w-8 pb-3" src={scrollimg1} />
                                             </div>
@@ -204,7 +201,7 @@ const HeaderSm = () => {
                                                 <h3 className="text-lg  font-semibold mb-0">ETH</h3>
                                                 <p className="text-sm text-gray-500 ">Ether</p>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                         <div className="flex items-center">
                                             <div>
@@ -383,7 +380,7 @@ const HeaderMd = () => {
                     </>
                 </div>
                 <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-1 border-1 border-gray-400 rounded-lg">
-                    <h3 onClick={handleShowToken} className="cursor-pointer flex items-center mb-2 bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-2 rounded-full"></i>&nbsp;&nbsp;<strong className="font-semibold text-xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    <h3 onClick={handleShowToken} className="cursor-pointer flex items-center mb-2 bg-white py-2 px-3 rounded-2xl ml-3"><img src={bnb} style={{width:'3vw'}} alt="" />&nbsp;&nbsp;<strong className="font-semibold text-xl">BNB</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
                     <h3 className="text-3xl mb-2 items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
@@ -402,21 +399,18 @@ const HeaderMd = () => {
                         <Modal.Body> <div>
                             {/********* */}
                             <div className="px-3 common-boxes-container">
-                                {/* <div className="flex justify-between items-center  mt-4 mb-2">
-            <h3 className="text-xl ">Select a token</h3>
-            <h1 className="text-lg">X</h1>
-        </div> */}
+                                
                                 <input type="text" id="token-model-input-large" name="fname" placeholder="Search name or paste address" />
                                 <h3 className="text-xl pt-3">Common bases ?</h3>
                                 <div className="common-box-images">
                                     <div className="logo-images-container-large  ">
                                         <div>
-                                            <img className="logo-images w-6 " src={tokenimg1} />
+                                            <img className="logo-images w-6 " src={bnb} />
                                         </div>
-                                        <h3 className="mt-2 ml-2 text-base">ETH</h3>
+                                        <h3 className="mt-2 ml-2 text-base">BNB</h3>
                                     </div>
 
-                                    <div className="logo-images-container-large  ">
+                                    {/* <div className="logo-images-container-large  ">
                                         <div>
                                             <img className="logo-images w-6 " src={tokenimg2} />
                                         </div>
@@ -427,7 +421,7 @@ const HeaderMd = () => {
                                             <img className="logo-images w-6 " src={tokenimg3} />
                                         </div>
                                         <h3 className="mt-2 ml-2 text-base">USDC</h3>
-                                    </div>
+                                    </div> */}
 
                                     <div className="logo-images-container-large  ">
                                         <div>
@@ -449,7 +443,7 @@ const HeaderMd = () => {
                                         <div>
                                             <img className="logo-images w-6 " src={tokenimg6} />
                                         </div>
-                                        <h3 className="mt-2 ml-2 text-base">WETH</h3>
+                                        <h3 className="mt-2 ml-2 text-base">WBNB</h3>
                                     </div>
                                 </div>
 
@@ -461,11 +455,11 @@ const HeaderMd = () => {
                                     <div className="scroll-object">
                                         <div className="flex items-center">
                                             <div >
-                                                <img className="Token-images w-8 pb-3" src={scrollimg1} />
+                                                <img className="Token-images w-8 pb-3" src={bnb} />
                                             </div>
                                             <div className="ml-4">
-                                                <h3 className="text-lg  font-semibold mb-0">ETH</h3>
-                                                <p className="text-sm text-gray-500 ">Ether</p>
+                                                <h3 className="text-lg  font-semibold mb-0">BNB</h3>
+                                                <p className="text-sm text-gray-500 ">Binance</p>
                                             </div>
                                         </div>
 
@@ -549,7 +543,7 @@ const HeaderMd = () => {
                                             </div>
                                         </div>
 
-                                        <div className="flex items-center">
+                                        {/* <div className="flex items-center">
                                             <div >
                                                 <img className="Token-images w-8 pb-3" src={scrollimg1} />
                                             </div>
@@ -557,7 +551,7 @@ const HeaderMd = () => {
                                                 <h3 className="text-lg  font-semibold mb-0">ETH</h3>
                                                 <p className="text-sm text-gray-500 ">Ether</p>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                         <div className="flex items-center">
                                             <div>
@@ -753,7 +747,7 @@ const HeaderLg = () => {
                     </>
                 </div>
                 <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-1 border-gray-400 rounded-lg">
-                    <h3 onClick={handleShowToken} className="cursor-pointer flex items-center mb-2 bg-white py-2 px-3 rounded-2xl ml-3"><i class="fab fa-ethereum bg-blue-600 text-white px-2 py-1 rounded-full"></i>&nbsp;&nbsp;<strong className="font-semibold text-xl">ETH</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
+                    <h3 onClick={handleShowToken} className="cursor-pointer flex items-center mb-2 bg-white py-2 px-3 rounded-2xl ml-3"><img src={bnb} style={{width:'2vw'}} alt="" />&nbsp;&nbsp;<strong className="font-semibold text-xl">BNB</strong>&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></h3>
                     <h3 className="text-3xl mb-2 items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
 
@@ -778,14 +772,14 @@ const HeaderLg = () => {
                                     <input type="text" id="token-model-input-large" name="fname" placeholder="Search name or paste address" />
                                     <h3 className="text-xl pt-3">Common bases ?</h3>
                                     <div className="common-box-images">
-                                        <div className="logo-images-container-large  ">
+                                        <div className="logo-images-container-large">
                                             <div>
-                                                <img className="logo-images w-6 " src={tokenimg1} />
+                                                <img className="logo-images w-6 " src={bnb} />
                                             </div>
-                                            <h3 className="mt-2 ml-2 text-base">ETH</h3>
+                                            <h3 className="mt-2 ml-2 text-base">BNB</h3>
                                         </div>
 
-                                        <div className="logo-images-container-large  ">
+                                        {/* <div className="logo-images-container-large  ">
                                             <div>
                                                 <img className="logo-images w-6 " src={tokenimg2} />
                                             </div>
@@ -796,7 +790,7 @@ const HeaderLg = () => {
                                                 <img className="logo-images w-6 " src={tokenimg3} />
                                             </div>
                                             <h3 className="mt-2 ml-2 text-base">USDC</h3>
-                                        </div>
+                                        </div> */}
 
                                         <div className="logo-images-container-large  ">
                                             <div>
@@ -818,7 +812,7 @@ const HeaderLg = () => {
                                             <div>
                                                 <img className="logo-images w-6 " src={tokenimg6} />
                                             </div>
-                                            <h3 className="mt-2 ml-2 text-base">WETH</h3>
+                                            <h3 className="mt-2 ml-2 text-base">WBNB</h3>
                                         </div>
                                     </div>
 
@@ -830,11 +824,11 @@ const HeaderLg = () => {
                                         <div className="scroll-object">
                                             <div className="flex items-center">
                                                 <div >
-                                                    <img className="Token-images w-8 pb-3" src={scrollimg1} />
+                                                    <img className="Token-images w-8 pb-3" src={bnb} />
                                                 </div>
                                                 <div className="ml-4">
-                                                    <h3 className="text-lg  font-semibold mb-0">ETH</h3>
-                                                    <p className="text-sm text-gray-500 ">Ether</p>
+                                                    <h3 className="text-lg  font-semibold mb-0">BNB</h3>
+                                                    <p className="text-sm text-gray-500 ">Binance</p>
                                                 </div>
                                             </div>
 
@@ -918,7 +912,7 @@ const HeaderLg = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="flex items-center">
+                                            {/* <div className="flex items-center">
                                                 <div >
                                                     <img className="Token-images w-8 pb-3" src={scrollimg1} />
                                                 </div>
@@ -926,7 +920,7 @@ const HeaderLg = () => {
                                                     <h3 className="text-lg  font-semibold mb-0">ETH</h3>
                                                     <p className="text-sm text-gray-500 ">Ether</p>
                                                 </div>
-                                            </div>
+                                            </div> */}
 
                                             <div className="flex items-center">
                                                 <div>
