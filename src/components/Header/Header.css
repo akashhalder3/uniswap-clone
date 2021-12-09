@@ -35,7 +35,6 @@
 
 .options{
     display: flex;
-    /* border: 2px solid green; */
     align-items: center;
     position: absolute;
     font-weight: 700;
@@ -61,10 +60,14 @@
     margin-right: 20px;
 }
 .optionTwo{
-    background-color: rgb(253, 234, 241);
-    /* border: 1px solid rgb(253, 234, 241); */
+    background-color: navy;
     border-radius: 16px;
     text-align: center;
+}
+
+.bnb{
+    width: 2vw;
+    margin-right: 7px;
 }
 
 @media(max-width: 668px){
@@ -86,9 +89,7 @@
     .menus li{
         font-size: 12px;
     }
-    /* .eth{
-        padding-left: 5px;
-        padding-right: 5px;
-
-    } */
+    .bnb{
+        width: 5vw;
+    }
 }

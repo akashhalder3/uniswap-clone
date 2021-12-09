@@ -70,7 +70,7 @@ const HeaderSm = () => {
                                     <h2 className="text-gray-600 font-bold text-xl pt-4">Interface Settings</h2>
                                     <div className="flex justify-between items-center py-3">
                                         <h4 className="text-gray-600 text-lg">Auto Router ?</h4>
-                                        <Switch />
+                                        <Switch/>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <h4 className="text-gray-600 text-lg">Expert Model ?</h4>
@@ -89,7 +89,7 @@ const HeaderSm = () => {
                 </div>
 
                 <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-1 border-gray-400 rounded-lg">
-                    <h3 onClick={handleShowToken} className="cursor-pointer mb-2 flex items-center bg-pink-600 py-2 px-3  ml-3 rounded-xl"><span className=" text-2xl bg-pink-600 text-white">Select a token</span>&nbsp;&nbsp;<i class="fas fa-chevron-down pt-2 pr-1 bg-pink-600 text-white"></i></h3>
+                    <h3 onClick={handleShowToken} className="cursor-pointer mb-2 flex items-center bg-indigo-800 py-2 px-3  ml-3 rounded-xl"><span className=" text-2xl text-white">Select a token</span>&nbsp;&nbsp;<i class="fas fa-chevron-down pt-2 pr-1 text-white"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
                 <>
@@ -193,16 +193,6 @@ const HeaderSm = () => {
                                             </div>
                                         </div>
 
-                                        {/* <div className="flex items-center">
-                                            <div >
-                                                <img className="Token-images w-8 pb-3" src={scrollimg1} />
-                                            </div>
-                                            <div className="ml-4">
-                                                <h3 className="text-lg  font-semibold mb-0">ETH</h3>
-                                                <p className="text-sm text-gray-500 ">Ether</p>
-                                            </div>
-                                        </div> */}
-
                                         <div className="flex items-center">
                                             <div>
                                                 <img className="w-8 pb-3" src={scrollimg2} />
@@ -282,7 +272,7 @@ const HeaderSm = () => {
                     </Modal>
                 </>
 
-                <h3 className="header__button bg-pink-200 text-pink-700 flex justify-center py-4 rounded-3xl text-2xl font-semibold" onClick={handleShow}>Connect Wallet</h3>
+                <h3 className="cursor-pointer header__button bg-indigo-800 text-light flex justify-center py-4 rounded-3xl text-2xl font-semibold" onClick={handleShow}>Connect Wallet</h3>
                 <>
                     <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
@@ -752,7 +742,7 @@ const HeaderLg = () => {
                 </div>
 
                 <div className="header__section__one flex items-center justify-between bg-gray-100 py-3 mb-3 border-gray-400 rounded-lg">
-                    <h3 onClick={handleShowToken} className="cursor-pointer mb-2 flex items-center bg-pink-600 py-2 px-3  ml-3 rounded-xl"><span className=" text-xl bg-pink-600 text-white">Select a token</span>&nbsp;&nbsp;<i class="fas fa-chevron-down pt-2 pr-1 bg-pink-600 text-white"></i></h3>
+                    <h3 onClick={handleShowToken} className="cursor-pointer mb-2 flex items-center bg-indigo-800 py-2 px-3  ml-3 rounded-xl"><span className=" text-xl text-white">Select a token</span>&nbsp;&nbsp;<i class="fas fa-chevron-down pt-2 pr-1 text-white"></i></h3>
                     <h3 className="mb-2 text-3xl items-center font-bold bg-gray-100  text-gray-400 py-1 px-3 rounded-lg mr-3">0.0</h3>
                 </div>
                 <>
@@ -765,10 +755,6 @@ const HeaderLg = () => {
                             <div>
                                 {/********* */}
                                 <div className="px-3 common-boxes-container">
-                                    {/* <div className="flex justify-between items-center  mt-4 mb-2">
-            <h3 className="text-xl ">Select a token</h3>
-            <h1 className="text-lg">X</h1>
-        </div> */}
                                     <input type="text" id="token-model-input-large" name="fname" placeholder="Search name or paste address" />
                                     <h3 className="text-xl pt-3">Common bases ?</h3>
                                     <div className="common-box-images">
@@ -778,19 +764,6 @@ const HeaderLg = () => {
                                             </div>
                                             <h3 className="mt-2 ml-2 text-base">BNB</h3>
                                         </div>
-
-                                        {/* <div className="logo-images-container-large  ">
-                                            <div>
-                                                <img className="logo-images w-6 " src={tokenimg2} />
-                                            </div>
-                                            <h3 className="mt-2 ml-2 text-base">DAI</h3>
-                                        </div>
-                                        <div className="logo-images-container-large  ">
-                                            <div>
-                                                <img className="logo-images w-6 " src={tokenimg3} />
-                                            </div>
-                                            <h3 className="mt-2 ml-2 text-base">USDC</h3>
-                                        </div> */}
 
                                         <div className="logo-images-container-large  ">
                                             <div>
@@ -912,16 +885,6 @@ const HeaderLg = () => {
                                                 </div>
                                             </div>
 
-                                            {/* <div className="flex items-center">
-                                                <div >
-                                                    <img className="Token-images w-8 pb-3" src={scrollimg1} />
-                                                </div>
-                                                <div className="ml-4">
-                                                    <h3 className="text-lg  font-semibold mb-0">ETH</h3>
-                                                    <p className="text-sm text-gray-500 ">Ether</p>
-                                                </div>
-                                            </div> */}
-
                                             <div className="flex items-center">
                                                 <div>
                                                     <img className="w-8 pb-3" src={scrollimg2} />
@@ -1017,7 +980,7 @@ const HeaderLg = () => {
                     </Modal>
                 </>
 
-                <h3 className="hover:bg-pink-300 header__button bg-pink-200 text-pink-700 flex justify-center py-4 rounded-3xl text-xl font-semibold cursor-pointer" onClick={handleShow}>Connect Wallet</h3>
+                <h3 className="hover:bg-indigo-900 header__button bg-indigo-800 text-light flex justify-center py-4 rounded-3xl text-xl font-semibold cursor-pointer" onClick={handleShow}>Connect Wallet</h3>
                 <>
                     <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>

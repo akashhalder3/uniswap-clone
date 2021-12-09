@@ -1,5 +1,5 @@
 .position__box__left {
-  background-color: deeppink;
+  background-color: navy;
   width: fit-content;
   padding: 8px 28px;
   border-radius: 25px;
@@ -16,7 +16,7 @@
   background-color: white;
 }
 .wallet__button {
-  background-color: deeppink;
+  background-color: navy;
   width: fit-content;
   padding: 8px 28px;
   border-radius: 25px;
@@ -30,40 +30,29 @@
 .view__box {
 }
 .guideline {
-  background: radial-gradient(
-      92.78% 103.09% at 50.06% 7.22%,
-      rgba(255, 58, 212, 0.07) 0%,
-      rgba(255, 255, 255, 0.043) 100%
-    ),
-    radial-gradient(
-      100% 97.16% at 0% 12.22%,
-      rgba(235, 0, 255, 0.2) 0%,
-      rgba(243, 19, 19, 0.2) 100%
-    );
-  background-image: radial-gradient(
-      92.78% 103.09% at 50.06% 7.22%,
-      rgba(255, 58, 212, 0.07) 0%,
-      rgba(255, 255, 255, 0.043) 100%
-    ),
-    radial-gradient(
-      100% 97.16% at 0% 12.22%,
-      rgba(235, 0, 255, 0.2) 0%,
-      rgba(243, 19, 19, 0.2) 100%
-    );
-  background-position-x: initial, initial;
-  background-position-y: initial, initial;
-  background-size: initial, initial;
-  background-repeat-x: initial, initial;
-  background-repeat-y: initial, initial;
-  background-attachment: initial, initial;
-  background-origin: initial, initial;
-  background-clip: initial, initial;
-  background-color: initial;
+  background: #000080;
+  background: linear-gradient(to bottom, #000080 0%, #000071 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #000080),
+    color-stop(100%, #000071)
+  );
+  background: -webkit-linear-gradient(top, #000080 0%, #000071 100%);
+  background: -moz-linear-gradient(top, #000080 0%, #000071 100%);
+  background: -o-linear-gradient(top, #000080 0%, #000071 100%);
+  background: -ms-linear-gradient(top, #000080 0%, #000071 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000080', endColorstr='#000071', GradientType=0);
+  border: 1px solid #000062;
+  box-shadow: inset 0 1px 0 #0f0f8f;
+  -webkit-box-shadow: inset 0 1px 0 #0f0f8f;
+  -moz-box-shadow: inset 0 1px 0 #0f0f8f;
 }
 
-.topPools{
-    background-color: #b8c6db;
-background-image: linear-gradient(200deg, #b8c6db 0%, #f5f7fa 74%);
+.topPools {
+  background-color: #b8c6db;
+  background-image: linear-gradient(200deg, #b8c6db 0%, #f5f7fa 74%);
 }
 
 .pool__text__box__left {

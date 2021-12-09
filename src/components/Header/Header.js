@@ -9,6 +9,7 @@ import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
 import icon4 from "../../assets/icon4.png";
 import icon5 from "../../assets/icon5.png";
+import bnb from "../../assets/bnb.png";
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -17,22 +18,21 @@ const Header = () => {
     return (
         <div className="header pt-3">
             <div className="logo">
-            <i class="logoIcon fas fa-chess-knight"></i>
+            <i class="logoIcon fas fa-chess-knight" style={{color:'white'}}></i>
             </div>
             <div className="menus">
                 <li><Link style={{textDecoration: 'none', color:'black'}} to="/">Swap</Link></li>
                 <li><Link style={{textDecoration: 'none', color:'black'}} to="/pool">Pool</Link></li>
             </div>
             <div className="options">
-                <div className="optionOne px-3">
-                    <i className="eth fab fa-ethereum ethereum__icon mr-2 px-2 py-1 mb-1"></i>
-                    {/* <img src={eth} alt="" style={{width:'10%'}}/> */}
-                    <p className="pt-2">Ethereum</p>
+                <div className="optionOne px-3 py-2">
+                    <img src={bnb} className="bnb" alt="" />
+                    <h6 className="mt-1">BNB</h6>
                 </div>
-                <div className="optionTwo px-3">
-                    <p onClick={handleShow} className="cursor-pointer connectWallet nav__text text-base text-pink-700 font-bold pt-2">Connect Wallet</p>
+                <div className="optionTwo px-3 py-2">
+                    <h6 onClick={handleShow} className="cursor-pointer mt-1 text-light">Connect Wallet</h6>
                 </div>
-                <div className="optionThree px-3 py-1 mb-1">
+                <div className="optionThree px-3 py-2">
                 <i class="fas fa-ellipsis-h nav__menu rounded-lg"></i>
                 </div>
             </div>

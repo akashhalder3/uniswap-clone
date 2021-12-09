@@ -14,9 +14,9 @@ const PoolSm = () => {
     return (
         <>
             <div>
-                <h3 className="text-black text-xl my-4">Pools Overview</h3>
+                <h3 className="text-light text-xl my-4">Pools Overview</h3>
                 <div className="position__box flex justify-between items-center">
-                    <p className="position__box__left ">+ Position New</p>
+                    <p className="position__box__left">+ Position New</p>
                     <p className="position__box__right">More <i class="fas fa-chevron-down"></i></p>
                 </div>
                 <div className="middle__box text-gray-600 bg-white mt-3">
@@ -25,7 +25,7 @@ const PoolSm = () => {
                     <button className="wallet__button text-base mb-4" onClick={handleShow}>Connect Wallet</button>
                 </div>
                 <div className=" view__box mt-8">
-                    <h5 className="text-base mt-2 text-center"><i className="fas fa-layer-group mr-1 text-base"></i>
+                    <h5 className="text-base mt-2 text-center text-light"><i className="fas fa-layer-group mr-1 text-base"></i>
                         View V2 liquidity
                     </h5>
                 </div>
@@ -168,7 +168,7 @@ const PoolLg = () => {
 
             <div className="pool__large">
                 <div className="flex items-center justify-between my-4">
-                    <h3 className="text-black text-xl ">Pools Overview</h3>
+                    <h3 className="text-light text-xl ">Pools Overview</h3>
                     <div className="position__box flex  items-center">
                         <p className="position__box__right mr-2">More <i class="fas fa-chevron-down"></i></p>
                         <p className="position__box__left font-bold">+ New Position</p>
@@ -176,7 +176,7 @@ const PoolLg = () => {
                 </div>
 
                 <div className="w-full flex ">
-                    <div className="guideline w-2/3 text__box__left py-4 mr-3 ml-1 pool__text__box__left">
+                    <div className="guideline w-2/3 text__box__left py-4 mr-3 ml-1 pool__text__box__left text-light">
                         <h2 className="text-xl text__box__left__head ml-6 font-bold">Learn about providing liquidity <i class="fas fa-external-link-alt text__box__left__head__para"></i></h2>
                         <p className="text-base text__box__left__para ml-6 ">Check out our v3 LP walkthrough and migration<br />guides.</p>
                     </div>
@@ -194,7 +194,7 @@ const PoolLg = () => {
                     <button className="wallet__button text-base font-bold px-5" onClick={handleShow}>Connect Wallet</button>
                 </div>
                 <div className=" view__box mt-8">
-                    <h5 className="text-base mt-2 ml-2"><i className="fas fa-layer-group mr-1 text-base"></i>
+                    <h5 className="text-base mt-2 ml-2 text-light"><i className="fas fa-layer-group mr-1 text-base"></i>
                         View V2 liquidity
                     </h5>
                 </div>
