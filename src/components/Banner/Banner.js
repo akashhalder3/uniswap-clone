@@ -281,9 +281,9 @@ const HeaderSm = () => {
                         <Modal.Body>
                             <p style={{ borderRadius: '16px', padding: '20px', backgroundColor: '#F7F8FA' }}>By connecting a wallet, you agree to Uniswap Labs’ Terms of Service and acknowledge that you have read and understand the Uniswap Protocol Disclaimer.</p>
 
-                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
+                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: 'navy' }}>
                                 <h6 className="mt-2">How this app use APIs</h6>
-                                <i class="fas fa-arrow-right  bg-pink-700"></i>
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                             <br />
                             <div className="flex justify-between items-center px-4" style={{ backgroundColor: "#EDEEF2", borderRadius: "16px" }}>
@@ -971,7 +971,7 @@ const HeaderLg = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-xl rounded-lg font-semibold bg-gray-200  py-3 text-pink-600 flex items-center justify-center"><i class="far fa-edit mr-1 bg-gray-200"></i> Manage Token Lists</p>
+                                <p className="text-xl rounded-lg font-semibold bg-gray-200  py-3 text-indigo-800 flex items-center justify-center"><i class="far fa-edit mr-1 bg-gray-200"></i> Manage Token Lists</p>
 
                             </div>
                             {/* ************* */}
@@ -989,9 +989,9 @@ const HeaderLg = () => {
                         <Modal.Body>
                             <p style={{ borderRadius: '16px', padding: '20px', backgroundColor: '#F7F8FA' }}>By connecting a wallet, you agree to Uniswap Labs’ Terms of Service and acknowledge that you have read and understand the Uniswap Protocol Disclaimer.</p>
 
-                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
+                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: 'navy' }}>
                                 <h6 className="mt-2 ">How this app use APIs</h6>
-                                <i class="fas fa-arrow-right  bg-pink-700"></i>
+                                <i class="fas fa-arrow-right"></i>
 
                             </div>
                             <br />

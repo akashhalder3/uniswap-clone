@@ -37,9 +37,9 @@ const PoolSm = () => {
                         <Modal.Body>
                             <p style={{ borderRadius: '16px', padding: '20px', backgroundColor: '#F7F8FA' }}>By connecting a wallet, you agree to Uniswap Labs’ Terms of Service and acknowledge that you have read and understand the Uniswap Protocol Disclaimer.</p>
 
-                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
+                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: 'navy' }}>
                                 <h6 className="mt-2 ">How this app use APIs</h6>
-                                <i class="fas fa-arrow-right  bg-pink-700"></i>
+                                <i class="fas fa-arrow-right"></i>
 
                             </div>
                             <br />
@@ -206,9 +206,9 @@ const PoolLg = () => {
                         <Modal.Body>
                             <p style={{ borderRadius: '16px', padding: '20px', backgroundColor: '#F7F8FA' }}>By connecting a wallet, you agree to Uniswap Labs’ Terms of Service and acknowledge that you have read and understand the Uniswap Protocol Disclaimer.</p>
 
-                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: '#D10064' }}>
+                            <div className="d-flex align-items-center justify-content-between text-white px-4" style={{ borderRadius: '16px', backgroundColor: 'navy' }}>
                                 <h6 className="mt-2 ">How this app use APIs</h6>
-                                <i class="fas fa-arrow-right  bg-pink-700"></i>
+                                <i class="fas fa-arrow-right"></i>
 
                             </div>
                             <br />
