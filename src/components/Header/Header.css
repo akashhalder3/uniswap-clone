@@ -6,6 +6,9 @@
     /* border: 2px solid black; */
     margin: 0 auto;
 }
+.headLogo{
+    width: 60px;
+}
 .logoIcon{
     font-size: 30px;
 }

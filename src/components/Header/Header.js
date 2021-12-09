@@ -10,6 +10,7 @@ import icon3 from "../../assets/icon3.svg";
 import icon4 from "../../assets/icon4.png";
 import icon5 from "../../assets/icon5.png";
 import bnb from "../../assets/bnb.png";
+import swap from "../../assets/swap_logo.png";
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
     return (
         <div className="header pt-3">
             <div className="logo">
-            <i class="logoIcon fas fa-chess-knight" style={{color:'white'}}></i>
+            <img className="headLogo" src={swap} alt="" />
             </div>
             <div className="menus">
                 <li><Link style={{textDecoration: 'none', color:'black'}} to="/">Swap</Link></li>
